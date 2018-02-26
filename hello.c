@@ -299,7 +299,7 @@ PHP_FUNCTION(hello_person_greet)
 
     php_printf("Hello ");
     PHPWRITE(person->name, person->name_len);
-    php_printf("!\nAccording to my records, you are %d years old.\n", person->age);
+    php_printf("!\nAccording to my records, you are %ld years old.\n", person->age);
 
     RETURN_TRUE;
 }

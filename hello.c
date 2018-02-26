@@ -268,7 +268,7 @@ PHP_FUNCTION(hello_person_new)
     }
 
     if (name_len < 1) {
-        php_error_docref(NULL TSRMLS_CC, E_WARNING, "No name given, person resource not created.", age);
+        php_error_docref(NULL TSRMLS_CC, E_WARNING, "No name given, person resource not created.");
         RETURN_FALSE;
     }
 
@@ -303,4 +303,3 @@ PHP_FUNCTION(hello_person_greet)
 
     RETURN_TRUE;
 }
-    

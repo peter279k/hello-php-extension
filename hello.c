@@ -273,7 +273,7 @@ PHP_FUNCTION(hello_person_new)
     }
 
     if (age < 0 || age > 255) {
-        php_error_docref(NULL TSRMLS_CC, E_WARNING, "Nonsense age (%d) given, person resource not created.", age);
+        php_error_docref(NULL TSRMLS_CC, E_WARNING, "Nonsense age (%ld) given, person resource not created.", age);
         RETURN_FALSE;
     }
 
@@ -303,4 +303,4 @@ PHP_FUNCTION(hello_person_greet)
 
     RETURN_TRUE;
 }
-
+    
